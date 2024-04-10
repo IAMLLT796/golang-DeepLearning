@@ -13,4 +13,11 @@ func main() {
 
 	classMates2 := [...]string{"小明", "小红", "小李"}
 	fmt.Println(classMates2)
+
+	// 使用 new 函数申请 string 数组的内存空间
+	classMates3 := new([3]string)
+	classMates3[0] = "小明"
+	classMates3[1] = "小红"
+	classMates3[2] = "小李"
+	fmt.Println(*classMates3)
 }
